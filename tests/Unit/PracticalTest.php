@@ -16,6 +16,13 @@ class PracticalTest extends TestCase
     {
         $this->assertEquals(Practical::add(1,3), 4);
     }
+
+    public function testAdd(): void
+    {
+        $this->assertEquals(Practical::add(1,4), 5);
+    }
+
 }
 
 ?>
+
