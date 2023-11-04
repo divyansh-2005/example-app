@@ -1,6 +1,8 @@
 <?php
 namespace practicals;
 
+use InvalidArgumentException;
+
 class Practical {
     /**
      * Function to print "Hello, World!"
@@ -16,6 +18,9 @@ class Practical {
      * @return int The sum of the two numbers
      */
     public static function add($num1, $num2) {
+        if((!is_int($num1) )|| (!is_int($num2))){
+            throw new InvalidArgumentException("Both must be interger");
+        }
         return $num1 + $num2;
     }
 
@@ -31,5 +36,6 @@ class Practical {
         }
         return $fibonacciSequence;
     }
+    
 }
 ?>
