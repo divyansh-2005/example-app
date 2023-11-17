@@ -1,13 +1,13 @@
 <?php
 namespace practicals;
 
-class Practical1{
+class new_practical{
     public static function printHello(){
         echo "Hello World\n";
     }
 
-    public static function add($num1,$num2){
-        return $num1+$num2;
+    public static function mul($num1,$num2){
+        return $num1*$num2;
     }
     public static function generateFibonacciSequence($n){
         $fibo= [0,1];
