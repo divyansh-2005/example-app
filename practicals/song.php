@@ -71,9 +71,10 @@ class Song {
         return $this->tempo;
     }
 }
-
+/*
 // Example usage:
 $song = new Song();
+
 $song->setTitle("Bohemian Rhapsody");
 $song->setArtist("Queen");
 $song->setGenre("Rock");
@@ -83,4 +84,5 @@ echo "Title: " . $song->getTitle() . "\n";
 echo "Artist: " . $song->getArtist() . "\n";
 echo "Genre: " . $song->getGenre() . "\n";
 echo "Tempo: " . $song->getTempo() . "\n";
+*/
 ?>
