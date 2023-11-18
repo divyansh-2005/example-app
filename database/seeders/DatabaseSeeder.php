@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\Song;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,5 +19,15 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        // Seed a few songs
+        Song::create([
+            'artist' => 'Eminem',
+            'title' => 'Stan',
+        ]);
+
+        Song::create([
+            'artist' => 'A P Dhillon',
+            'title' => 'With You',
+        ]);
     }
 }
