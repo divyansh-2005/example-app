@@ -8,35 +8,22 @@
     <h1>HEllossdjskjg</h1>
     <h2>Songs Class</h2>
     <table border="1" >
-     
+     @foreach($songs as $song)
     <tr>
         <th>Title: </th>
-    </tr>
-    <tr>
-        <td>{{ $song -> getTitle() }}</td>
-    </tr>
-
-    <tr>
         <th>Artist: </th>
-    </tr>
-    <tr>
-        <td>{{ $song -> getArtist() }}</td>
-    </tr>
-
-    <tr>
         <th>Genre: </th>
-    </tr>
-    <tr>
-        <td>{{ $song -> getGenre() }}</td>
-    </tr>
-
-    <tr>
         <th>Tempo: </th>
     </tr>
     <tr>
+        <td>{{ $song -> getTitle() }}</td>
+        <td>{{ $song -> getArtist() }}</td>
+        <td>{{ $song -> getGenre() }}</td>
         <td>{{ $song -> getTempo() }}</td>
+
+
     </tr>
-    
+    @endforeach
     </table>
 
 
