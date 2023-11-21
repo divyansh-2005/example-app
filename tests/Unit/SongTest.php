@@ -3,11 +3,13 @@
 namespace Tests\Unit;
 
 use InvalidArgumentException;
+
+// SongTest.php
 use PHPUnit\Framework\TestCase;
 use Practicals\song;
 
 class SongTest extends TestCase {
-    public function testSetAndGetTempo() {
+    public function testSetTempo() {
         // Arrange
         $song = new Song();
 
@@ -19,8 +21,7 @@ class SongTest extends TestCase {
         $this->assertEquals(60, $result);
     }
 
-    public function testSetTempoAcceptsIntegerString(): void
-    {
+    public function testSetTempoAcceptsIntegerString() {
         // Arrange
         $song = new Song();
 
@@ -31,8 +32,8 @@ class SongTest extends TestCase {
         // Assert
         $this->assertEquals(60, $result);
     }
-    public function testSetTempoRejectsAlphabetString():void
-    {
+
+    public function testSetTempoRejectsAlphabetString() {
         // Arrange
         $this->expectException(InvalidArgumentException::class);
 
