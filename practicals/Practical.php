@@ -11,31 +11,30 @@ class Practical {
         echo "Hello, World!\n";
     }
 
-    /**
-     * Function to add two numbers
-     * @param int $num1 The first number
-     * @param int $num2 The second number
-     * @return int The sum of the two numbers
-     */
     public static function add($num1, $num2) {
-        if((!is_int($num1) )|| (!is_int($num2))){
-            throw new InvalidArgumentException("Both must be interger");
+        if(!is_numeric($num1) || !is_numeric($num2))
+        {
+            throw new \InvalidArgumentException("Arguments must be numeric");
         }
         return $num1 + $num2;
     }
 
-    /**
-     * Function to generate a Fibonacci sequence
-     * @param int $n The number of elements in the Fibonacci sequence
-     * @return array An array containing the Fibonacci sequence
-     */
     public static function generateFibonacciSequence($n) {
-        $fibonacciSequence = [0, 1];
+        if(!is_int($n))
+        {
+            throw new \InvalidArgumentException("Arguments must be Integer");
+        }
+        $fibonacciSequence = array();
+        if ($n >= 1) {
+            $fibonacciSequence[] = 0;
+        }
+        if ($n >= 2) {
+            $fibonacciSequence[] = 1;
+        }
         for ($i = 2; $i < $n; $i++) {
-            $fibonacciSequence[$i] = $fibonacciSequence[$i - 1] + $fibonacciSequence[$i - 2];
+            $fibonacciSequence[] = $fibonacciSequence[$i - 1] + $fibonacciSequence[$i - 2];
         }
         return $fibonacciSequence;
     }
-    
 }
 ?>
