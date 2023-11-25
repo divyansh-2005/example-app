@@ -20,14 +20,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         // Seed a few songs
-        Song::create([
-            'artist' => 'Eminem',
-            'title' => 'Stan',
-        ]);
-
-        Song::create([
-            'artist' => 'A P Dhillon',
-            'title' => 'With You',
-        ]);
+       
     }
 }

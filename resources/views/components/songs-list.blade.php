@@ -8,11 +8,11 @@
             </div>
             @foreach($songs as $song)
             <div>
-                <div>{{$songs-> id}}</div>
-                <div>{{$songs-> title}}</div>
-                <div>{{$songs-> artist}}</div>
-                <div>{{$songs-> album}}</div>
-                <div>{{$songs-> duration}}</div>
+                <div>1</div>
+                <div>{{$song-> title}}</div>
+                <div>{{$song-> artist}}</div>
+                <div>0</div>
+                <div>0</div>
             </div>
             @endforeach
         </section>
