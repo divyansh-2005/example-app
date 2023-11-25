@@ -24,10 +24,7 @@ class SongSeeder extends Seeder
             'title' => 'With You',
         ]);
 
-        Song::create([
-            'artist' => 'Divyansh',
-            'title' => 'Code Running'
-        ]);
+       
     }
 }
 ?>

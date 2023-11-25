@@ -18,6 +18,7 @@
             color: white;
             padding: 10px;
             text-align: center;
+            
         }
 
         main {
@@ -57,13 +58,27 @@
             bottom: 0;
             width: 100%;
         }
+        
+        .b1, .b2{
+            background-color: green;
+            height: 40px;
+            width: 200px;
+            margin: 12px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Playlist Name</h1>
-        <p>Playlist Description or Information</p>
+    <header class="nav">
+        <h1 class="playlistName">Playlist Name</h1>
+        <button class="b1">Edit Playlist</button>
+        <button class="b2">New Playlist</button>
     </header>
 
     <main>
