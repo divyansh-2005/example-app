@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 //use Practicals\song;
 use App\Models\Song;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,7 +58,8 @@ Route::get('/songs', function () {
 Route::get('/songs_static', function () {
     return view('songs_static');
 });
+
+Route::get('/playlists/{playlistId}', function (string $playlistId) {
+    return view('playlist',[ 'songs' => Song::all() ,'playlistId'=>$playlistId] );
+});
 ?>
-
-
-
