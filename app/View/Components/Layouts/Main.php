@@ -12,7 +12,7 @@ class Main extends Component
     public string $title = "Playlist App";
 
     // Set an attribute for page name
-    public string $pageName;
+    public string $pageName; 
     /**
      * Create a new component instance.
      */
